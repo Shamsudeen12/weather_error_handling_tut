@@ -16,7 +16,7 @@ class WeatherRepositoryImpl extends WeatherRepository {
       String apiKey = dotenv.env['API_KEY'] ?? '';
 
       Uri uri = Uri.parse(
-        'https://api.openweathermap.org/data/2.5?lat=${position.latitude}&lon=${position.longitude}&appid=$apiKey&units=metric',
+        'https://api.openweathermap.org/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&appid=$apiKey&units=metric',
       );
 
       final response = await http.get(uri);

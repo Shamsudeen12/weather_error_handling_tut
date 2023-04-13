@@ -18,17 +18,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
-    initialisePermissions();
+    // initialisePermissions();
 
     super.initState();
   }
 
   void initialisePermissions() async {
     var status = await Geolocator.requestPermission();
-
-    if (status != LocationPermission.whileInUse) {
-      hasPermissionsError = true;
-    }
   }
 
   @override

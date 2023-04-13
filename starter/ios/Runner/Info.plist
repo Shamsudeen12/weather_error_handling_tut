@@ -47,7 +47,8 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
-	<string>Weather Forecast needs to access your location to give the weather</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+<string>Weather Forecast needs to access your location to give the weather</string>
 		<key>NSLocationAlwaysUsageDescription</key>
 	<string>This app requires access to your location get location current weather data.</string>
 </dict>
